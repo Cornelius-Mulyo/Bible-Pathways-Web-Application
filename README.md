@@ -4,7 +4,7 @@ A responsive web application for exploring topical Bible studies through the **K
 
 ## Live Demo
 
-**Application:** https://YOUR-NETLIFY-LINK.netlify.app
+**Application:** https://bible-pathways-web-application.netlify.app/
 
 ## Features
 
