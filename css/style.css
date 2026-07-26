@@ -558,3 +558,27 @@ button:hover{
 }
 
 }
+
+.language-selector{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:20px 0;
+
+}
+
+.language-selector select{
+
+    padding:10px;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}

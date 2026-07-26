@@ -2,626 +2,100 @@
   "categories": [
     {
       "id": "love",
-      "name": "Love",
+      "name": { "en": "Love", "es": "Amor" },
       "icon": "❤️",
       "studies": [
-        {
-          "position": "1/0",
-          "title": "Love/Sin",
-          "references": [
-            "Proverbs 8:36",
-            "Psalm 109:17",
-            "Proverbs 10:12",
-            "Luke 6:32",
-            "Romans 5:8"
-          ]
-        },
-        {
-          "position": "1/1",
-          "title": "Love",
-          "references": [
-            "Exodus 20:6",
-            "Joshua 23:11",
-            "Psalm 11:7",
-            "Psalm 18:1",
-            "Proverbs 4:6"
-          ]
-        },
-        {
-          "position": "1/2",
-          "title": "Love/Grace",
-          "references": [
-            "2 Corinthians 13:14",
-            "Ephesians 6:24",
-            "Titus 3:15",
-            "1 Timothy 1:14",
-            "Proverbs 22:11"
-          ]
-        },
-        {
-          "position": "1/3",
-          "title": "Love/Faith",
-          "references": [
-            "Galatians 5:22",
-            "Ephesians 1:15",
-            "Colossians 1:4",
-            "Philemon 1:5",
-            "Titus 3:15"
-          ]
-        },
-        {
-          "position": "1/4",
-          "title": "Love/Salvation",
-          "references": [
-            "Psalm 40:16",
-            "Psalm 70:4",
-            "1 Thessalonians 5:8",
-            "Hebrews 6:9",
-            "2 Peter 3:15"
-          ]
-        },
-        {
-          "position": "1/5",
-          "title": "Love/Repentance",
-          "references": [
-            "Revelation 3:19",
-            "1 Samuel 18:3",
-            "Genesis 6:6",
-            "Psalm 18:1",
-            "Exodus 32:14",
-            "Psalm 54:4",
-            "Amos 7:3",
-            "Psalm 119:115",
-            "Matthew 3:2"
-          ]
-        },
-        {
-          "position": "1/6",
-          "title": "Love/God",
-          "references": [
-            "Deuteronomy 6:5",
-            "Joshua 23:11",
-            "John 5:42",
-            "John 12:43",
-            "1 Corinthians 8:3"
-          ]
-        }
+        { "position": "1/0", "title": { "en": "Love/Sin", "es": "Amor/Pecado" }, "references": ["Proverbs 8:36", "Psalm 109:17", "Proverbs 10:12", "Luke 6:32", "Romans 5:8"] },
+        { "position": "1/1", "title": { "en": "Love", "es": "Amor" }, "references": ["Exodus 20:6", "Joshua 23:11", "Psalm 11:7", "Psalm 18:1", "Proverbs 4:6"] },
+        { "position": "1/2", "title": { "en": "Love/Grace", "es": "Amor/Gracia" }, "references": ["2 Corinthians 13:14", "Ephesians 6:24", "Titus 3:15", "1 Timothy 1:14", "Proverbs 22:11"] },
+        { "position": "1/3", "title": { "en": "Love/Faith", "es": "Amor/Fe" }, "references": ["Galatians 5:22", "Ephesians 1:15", "Colossians 1:4", "Philemon 1:5", "Titus 3:15"] },
+        { "position": "1/4", "title": { "en": "Love/Salvation", "es": "Amor/Salvación" }, "references": ["Psalm 40:16", "Psalm 70:4", "1 Thessalonians 5:8", "Hebrews 6:9", "2 Peter 3:15"] },
+        { "position": "1/5", "title": { "en": "Love/Repentance", "es": "Amor/Arrepentimiento" }, "references": ["Revelation 3:19", "1 Samuel 18:3", "Genesis 6:6", "Psalm 18:1", "Exodus 32:14", "Psalm 54:4", "Amos 7:3", "Psalm 119:115", "Matthew 3:2"] },
+        { "position": "1/6", "title": { "en": "Love/God", "es": "Amor/Dios" }, "references": ["Deuteronomy 6:5", "Joshua 23:11", "John 5:42", "John 12:43", "1 Corinthians 8:3"] }
       ]
     },
     {
       "id": "grace",
-      "name": "Grace",
+      "name": { "en": "Grace", "es": "Gracia" },
       "icon": "🕊",
       "studies": [
-        {
-          "position": "2/0",
-          "title": "Grace/Sin",
-          "references": [
-            "Romans 5:20",
-            "Romans 6:1",
-            "Ephesians 2:5",
-            "Ephesians 1:1",
-            "Romans 6:15"
-          ]
-        },
-        {
-          "position": "2/1",
-          "title": "Grace/Love",
-          "references": [
-            "Ephesians 1:6",
-            "Ephesians 6:24",
-            "Galatians 1:3",
-            "2 Corinthians 13:14",
-            "1 Timothy 1:4"
-          ]
-        },
-        {
-          "position": "2/2",
-          "title": "Grace",
-          "references": [
-            "Genesis 6:8",
-            "Proverbs 3:22",
-            "Luke 2:40",
-            "John 9:16",
-            "Romans 16:24"
-          ]
-        },
-        {
-          "position": "2/3",
-          "title": "Grace/Faith",
-          "references": [
-            "Ephesians 2:8",
-            "1 Timothy 1:4",
-            "1 Timothy 6:21",
-            "Titus 3:15",
-            "1 Timothy 1:2"
-          ]
-        },
-        {
-          "position": "2/4",
-          "title": "Grace/Salvation",
-          "references": [
-            "Titus 2:11",
-            "1 Peter 1:10",
-            "John 1:16",
-            "Genesis 49:18",
-            "Romans 4:4",
-            "1 Chronicles 16:23",
-            "1 Corinthians 16:23",
-            "Psalm 18:46"
-          ]
-        },
-        {
-          "position": "2/5",
-          "title": "Grace/Repentance",
-          "references": [
-            "Ephesians 1:7",
-            "Genesis 6:8",
-            "Luke 2:40",
-            "Job 42:6",
-            "John 1:17",
-            "Psalm 90:13",
-            "1 Corinthians 10:30",
-            "Amos 7:3"
-          ]
-        },
-        {
-          "position": "2/6",
-          "title": "Grace/God",
-          "references": [
-            "1 Corinthians 1:4",
-            "Philippians 1:2",
-            "Titus 2:11",
-            "2 Peter 1:2",
-            "James 4:6"
-          ]
-        }
+        { "position": "2/0", "title": { "en": "Grace/Sin", "es": "Gracia/Pecado" }, "references": ["Romans 5:20", "Romans 6:1", "Ephesians 2:5", "Ephesians 1:1", "Romans 6:15"] },
+        { "position": "2/1", "title": { "en": "Grace/Love", "es": "Gracia/Amor" }, "references": ["Ephesians 1:6", "Ephesians 6:24", "Galatians 1:3", "2 Corinthians 13:14", "1 Timothy 1:4"] },
+        { "position": "2/2", "title": { "en": "Grace", "es": "Gracia" }, "references": ["Genesis 6:8", "Proverbs 3:22", "Luke 2:40", "John 9:16", "Romans 16:24"] },
+        { "position": "2/3", "title": { "en": "Grace/Faith", "es": "Gracia/Fe" }, "references": ["Ephesians 2:8", "1 Timothy 1:4", "1 Timothy 6:21", "Titus 3:15", "1 Timothy 1:2"] },
+        { "position": "2/4", "title": { "en": "Grace/Salvation", "es": "Gracia/Salvación" }, "references": ["Titus 2:11", "1 Peter 1:10", "John 1:16", "Genesis 49:18", "Romans 4:4", "1 Chronicles 16:23", "1 Corinthians 16:23", "Psalm 18:46"] },
+        { "position": "2/5", "title": { "en": "Grace/Repentance", "es": "Gracia/Arrepentimiento" }, "references": ["Ephesians 1:7", "Genesis 6:8", "Luke 2:40", "Job 42:6", "John 1:17", "Psalm 90:13", "1 Corinthians 10:30", "Amos 7:3"] },
+        { "position": "2/6", "title": { "en": "Grace/God", "es": "Gracia/Dios" }, "references": ["1 Corinthians 1:4", "Philippians 1:2", "Titus 2:11", "2 Peter 1:2", "James 4:6"] }
       ]
     },
     {
       "id": "faith",
-      "name": "Faith",
+      "name": { "en": "Faith", "es": "Fe" },
       "icon": "✝",
       "studies": [
-        {
-          "position": "3/0",
-          "title": "Faith/Sin",
-          "references": [
-            "Mark 2:5",
-            "Luke 5:20",
-            "1 Corinthians 15:17",
-            "James 5:15",
-            "Romans 14:23"
-          ]
-        },
-        {
-          "position": "3/1",
-          "title": "Faith/Love",
-          "references": [
-            "Galatians 5:6",
-            "Galatians 5:22",
-            "Ephesians 1:15",
-            "Ephesians 6:23",
-            "1 Thessalonians 5:8"
-          ]
-        },
-        {
-          "position": "3/2",
-          "title": "Faith/Grace",
-          "references": [
-            "Romans 5:2",
-            "Ephesians 2:8",
-            "1 Timothy 6:21",
-            "Titus 1:4",
-            "Romans 1:5"
-          ]
-        },
-        {
-          "position": "3/3",
-          "title": "Faith",
-          "references": [
-            "Matthew 9:29",
-            "Mark 2:5",
-            "Mark 4:40",
-            "Mark 11:22",
-            "Luke 5:20"
-          ]
-        },
-        {
-          "position": "3/4",
-          "title": "Faith/Salvation",
-          "references": [
-            "2 Timothy 3:15",
-            "1 Peter 1:5",
-            "1 Peter 1:9",
-            "1 Thessalonians 5:8",
-            "Mark 2:5",
-            "Genesis 49:18"
-          ]
-        },
-        {
-          "position": "3/5",
-          "title": "Faith/Repentance",
-          "references": [
-            "Acts 20:21",
-            "Luke 5:20",
-            "Hebrews 6:1",
-            "Numbers 12:7",
-            "Matthew 3:8",
-            "Lamentations 3:23",
-            "Luke 15:7"
-          ]
-        },
-        {
-          "position": "3/6",
-          "title": "Faith/God",
-          "references": [
-            "Matthew 6:30",
-            "1 Corinthians 1:9",
-            "1 Corinthians 2:5",
-            "Romans 10:17",
-            "Ephesians 2:8"
-          ]
-        }
+        { "position": "3/0", "title": { "en": "Faith/Sin", "es": "Fe/Pecado" }, "references": ["Mark 2:5", "Luke 5:20", "1 Corinthians 15:17", "James 5:15", "Romans 14:23"] },
+        { "position": "3/1", "title": { "en": "Faith/Love", "es": "Fe/Amor" }, "references": ["Galatians 5:6", "Galatians 5:22", "Ephesians 1:15", "Ephesians 6:23", "1 Thessalonians 5:8"] },
+        { "position": "3/2", "title": { "en": "Faith/Grace", "es": "Fe/Gracia" }, "references": ["Romans 5:2", "Ephesians 2:8", "1 Timothy 6:21", "Titus 1:4", "Romans 1:5"] },
+        { "position": "3/3", "title": { "en": "Faith", "es": "Fe" }, "references": ["Matthew 9:29", "Mark 2:5", "Mark 4:40", "Mark 11:22", "Luke 5:20"] },
+        { "position": "3/4", "title": { "en": "Faith/Salvation", "es": "Fe/Salvación" }, "references": ["2 Timothy 3:15", "1 Peter 1:5", "1 Peter 1:9", "1 Thessalonians 5:8", "Mark 2:5", "Genesis 49:18"] },
+        { "position": "3/5", "title": { "en": "Faith/Repentance", "es": "Fe/Arrepentimiento" }, "references": ["Acts 20:21", "Luke 5:20", "Hebrews 6:1", "Numbers 12:7", "Matthew 3:8", "Lamentations 3:23", "Luke 15:7"] },
+        { "position": "3/6", "title": { "en": "Faith/God", "es": "Fe/Dios" }, "references": ["Matthew 6:30", "1 Corinthians 1:9", "1 Corinthians 2:5", "Romans 10:17", "Ephesians 2:8"] }
       ]
     },
     {
       "id": "sin",
-      "name": "Sin",
+      "name": { "en": "Sin", "es": "Pecado" },
       "icon": "⚠",
       "studies": [
-        {
-          "position": "0/0",
-          "title": "Sin",
-          "references": [
-            "Numbers 7:16",
-            "1 Kings 14:16",
-            "Job 1:22",
-            "Psalm 38:18",
-            "Psalm 51:13"
-          ]
-        },
-        {
-          "position": "0/1",
-          "title": "Sin/Love",
-          "references": [
-            "Proverbs 10:12",
-            "Romans 5:8",
-            "Proverbs 8:36",
-            "Proverbs 17:19",
-            "Luke 6:32"
-          ]
-        },
-        {
-          "position": "0/2",
-          "title": "Sin/Grace",
-          "references": [
-            "Romans 6:1",
-            "Romans 6:14",
-            "Ephesians 2:5",
-            "Romans 6:15",
-            "Ephesians 1:7"
-          ]
-        },
-        {
-          "position": "0/3",
-          "title": "Sin/Faith",
-          "references": [
-            "Luke 5:20",
-            "Mark 2:5",
-            "1 Corinthians 15:17",
-            "1 Timothy 1:15",
-            "Romans 14:23"
-          ]
-        },
-        {
-          "position": "0/4",
-          "title": "Sin/Salvation",
-          "references": [
-            "Psalm 79:9",
-            "Leviticus 26:24",
-            "Genesis 49:18",
-            "Numbers 28:22",
-            "1 Chronicles 16:23",
-            "Numbers 33:11",
-            "Job 13:16",
-            "1 Kings 12:30",
-            "Psalm 3:8"
-          ]
-        },
-        {
-          "position": "0/5",
-          "title": "Sin/Repentance",
-          "references": [
-            "Luke 5:32",
-            "Luke 24:47",
-            "Luke 15:7",
-            "Luke 3:3",
-            "Mark 1:4"
-          ]
-        },
-        {
-          "position": "0/6",
-          "title": "Sin/God",
-          "references": [
-            "Psalm 69:5",
-            "Psalm 79:9",
-            "Mark 2:7",
-            "Romans 6:11",
-            "Romans 6:10"
-          ]
-        }
+        { "position": "0/0", "title": { "en": "Sin", "es": "Pecado" }, "references": ["Numbers 7:16", "1 Kings 14:16", "Job 1:22", "Psalm 38:18", "Psalm 51:13"] },
+        { "position": "0/1", "title": { "en": "Sin/Love", "es": "Pecado/Amor" }, "references": ["Proverbs 10:12", "Romans 5:8", "Proverbs 8:36", "Proverbs 17:19", "Luke 6:32"] },
+        { "position": "0/2", "title": { "en": "Sin/Grace", "es": "Pecado/Gracia" }, "references": ["Romans 6:1", "Romans 6:14", "Ephesians 2:5", "Romans 6:15", "Ephesians 1:7"] },
+        { "position": "0/3", "title": { "en": "Sin/Faith", "es": "Pecado/Fe" }, "references": ["Luke 5:20", "Mark 2:5", "1 Corinthians 15:17", "1 Timothy 1:15", "Romans 14:23"] },
+        { "position": "0/4", "title": { "en": "Sin/Salvation", "es": "Pecado/Salvación" }, "references": ["Psalm 79:9", "Leviticus 26:24", "Genesis 49:18", "Numbers 28:22", "1 Chronicles 16:23", "Numbers 33:11", "Job 13:16", "1 Kings 12:30", "Psalm 3:8"] },
+        { "position": "0/5", "title": { "en": "Sin/Repentance", "es": "Pecado/Arrepentimiento" }, "references": ["Luke 5:32", "Luke 24:47", "Luke 15:7", "Luke 3:3", "Mark 1:4"] },
+        { "position": "0/6", "title": { "en": "Sin/God", "es": "Pecado/Dios" }, "references": ["Psalm 69:5", "Psalm 79:9", "Mark 2:7", "Romans 6:11", "Romans 6:10"] }
       ]
     },
     {
       "id": "salvation",
-      "name": "Salvation",
+      "name": { "en": "Salvation", "es": "Salvación" },
       "icon": "👑",
       "studies": [
-        {
-          "position": "4/0",
-          "title": "Salvation/Sin",
-          "references": [
-            "Luke 1:77",
-            "Psalm 79:9",
-            "Hebrews 9:28",
-            "Matthew 1:21",
-            "Psalm 24:5"
-          ]
-        },
-        {
-          "position": "4/1",
-          "title": "Salvation/Love",
-          "references": [
-            "Hebrews 6:9",
-            "1 Thessalonians 5:8",
-            "Philippians 2:12",
-            "Psalm 70:4",
-            "Psalm 40:16"
-          ]
-        },
-        {
-          "position": "4/2",
-          "title": "Salvation/Grace",
-          "references": [
-            "Titus 2:11",
-            "1 Peter 1:10",
-            "Psalm 13:5",
-            "Proverbs 3:22",
-            "Psalm 38:22",
-            "John 1:16",
-            "Psalm 85:7",
-            "Romans 16:24"
-          ]
-        },
-        {
-          "position": "4/3",
-          "title": "Salvation/Faith",
-          "references": [
-            "1 Peter 1:5",
-            "1 Thessalonians 5:8",
-            "2 Timothy 3:15",
-            "Genesis 49:18",
-            "Proverbs 14:5",
-            "1 Chronicles 16:23",
-            "Proverbs 20:6"
-          ]
-        },
-        {
-          "position": "4/4",
-          "title": "Salvation",
-          "references": [
-            "Genesis 49:18",
-            "2 Samuel 22:36",
-            "2 Samuel 22:47",
-            "1 Chronicles 16:23",
-            "Job 13:16"
-          ]
-        },
-        {
-          "position": "4/5",
-          "title": "Salvation/Repentance",
-          "references": [
-            "2 Corinthians 7:10",
-            "Acts 5:31",
-            "Acts 20:21",
-            "Romans 11:29",
-            "2 Timothy 2:25"
-          ]
-        },
-        {
-          "position": "4/6",
-          "title": "Salvation/God",
-          "references": [
-            "Revelation 7:10",
-            "1 Peter 1:5",
-            "Titus 2:11",
-            "1 Thessalonians 5:9",
-            "Ephesians 6:17"
-          ]
-        }
+        { "position": "4/0", "title": { "en": "Salvation/Sin", "es": "Salvación/Pecado" }, "references": ["Luke 1:77", "Psalm 79:9", "Hebrews 9:28", "Matthew 1:21", "Psalm 24:5"] },
+        { "position": "4/1", "title": { "en": "Salvation/Love", "es": "Salvación/Amor" }, "references": ["Hebrews 6:9", "1 Thessalonians 5:8", "Philippians 2:12", "Psalm 70:4", "Psalm 40:16"] },
+        { "position": "4/2", "title": { "en": "Salvation/Grace", "es": "Salvación/Gracia" }, "references": ["Titus 2:11", "1 Peter 1:10", "Psalm 13:5", "Proverbs 3:22", "Psalm 38:22", "John 1:16", "Psalm 85:7", "Romans 16:24"] },
+        { "position": "4/3", "title": { "en": "Salvation/Faith", "es": "Salvación/Fe" }, "references": ["1 Peter 1:5", "1 Thessalonians 5:8", "2 Timothy 3:15", "Genesis 49:18", "Proverbs 14:5", "1 Chronicles 16:23", "Proverbs 20:6"] },
+        { "position": "4/4", "title": { "en": "Salvation", "es": "Salvación" }, "references": ["Genesis 49:18", "2 Samuel 22:36", "2 Samuel 22:47", "1 Chronicles 16:23", "Job 13:16"] },
+        { "position": "4/5", "title": { "en": "Salvation/Repentance", "es": "Salvación/Arrepentimiento" }, "references": ["2 Corinthians 7:10", "Acts 5:31", "Acts 20:21", "Romans 11:29", "2 Timothy 2:25"] },
+        { "position": "4/6", "title": { "en": "Salvation/God", "es": "Salvación/Dios" }, "references": ["Revelation 7:10", "1 Peter 1:5", "Titus 2:11", "1 Thessalonians 5:9", "Ephesians 6:17"] }
       ]
     },
     {
       "id": "repentance",
-      "name": "Repentance",
+      "name": { "en": "Repentance", "es": "Arrepentimiento" },
       "icon": "🙏",
       "studies": [
-        {
-          "position": "5/0",
-          "title": "Repentance/Sin",
-          "references": [
-            "Mark 1:14",
-            "Luke 3:3",
-            "Luke 24:47",
-            "Luke 5:32",
-            "Acts 5:31"
-          ]
-        },
-        {
-          "position": "5/1",
-          "title": "Repentance/Love",
-          "references": [
-            "Psalm 40:16",
-            "Psalm 70:4",
-            "Hebrews 6:9",
-            "Revelation 3:19",
-            "1 John 3:16"
-          ]
-        },
-        {
-          "position": "5/2",
-          "title": "Repentance/Grace",
-          "references": [
-            "Matthew 3:8",
-            "Genesis 6:8",
-            "Luke 5:32",
-            "Proverbs 1:9",
-            "Romans 11:29",
-            "Proverbs 3:22",
-            "Acts 13:24",
-            "Proverbs 3:34",
-            "Mark 1:4",
-            "John 1:16"
-          ]
-        },
-        {
-          "position": "5/3",
-          "title": "Repentance/Faith",
-          "references": [
-            "Luke 16:30",
-            "Acts 17:30",
-            "Mark 1:4",
-            "Romans 11:29",
-            "Luke 3:3",
-            "Numbers 12:7",
-            "Mark 4:40",
-            "Mark 11:22",
-            "Luke 17:5",
-            "Luke 17:19"
-          ]
-        },
-        {
-          "position": "5/4",
-          "title": "Repentance/Salvation",
-          "references": [
-            "2 Corinthians 7:10",
-            "Matthew 3:8",
-            "Genesis 49:18",
-            "Romans 11:29",
-            "Psalm 62:6",
-            "Luke 5:32",
-            "Psalm 85:7",
-            "Genesis 6:6",
-            "Psalm 91:16"
-          ]
-        },
-        {
-          "position": "5/5",
-          "title": "Repentance",
-          "references": [
-            "Matthew 3:8",
-            "Luke 5:32",
-            "Acts 13:24",
-            "Romans 11:29",
-            "Mark 1:4"
-          ]
-        },
-        {
-          "position": "5/6",
-          "title": "Repentance/God",
-          "references": [
-            "2 Samuel 22:47",
-            "Psalm 18:46",
-            "Psalm 24:5",
-            "Luke 3:6",
-            "Ephesians 6:17"
-          ]
-        }
+        { "position": "5/0", "title": { "en": "Repentance/Sin", "es": "Arrepentimiento/Pecado" }, "references": ["Mark 1:14", "Luke 3:3", "Luke 24:47", "Luke 5:32", "Acts 5:31"] },
+        { "position": "5/1", "title": { "en": "Repentance/Love", "es": "Arrepentimiento/Amor" }, "references": ["Psalm 40:16", "Psalm 70:4", "Hebrews 6:9", "Revelation 3:19", "1 John 3:16"] },
+        { "position": "5/2", "title": { "en": "Repentance/Grace", "es": "Arrepentimiento/Gracia" }, "references": ["Matthew 3:8", "Genesis 6:8", "Luke 5:32", "Proverbs 1:9", "Romans 11:29", "Proverbs 3:22", "Acts 13:24", "Proverbs 3:34", "Mark 1:4", "John 1:16"] },
+        { "position": "5/3", "title": { "en": "Repentance/Faith", "es": "Arrepentimiento/Fe" }, "references": ["Luke 16:30", "Acts 17:30", "Mark 1:4", "Romans 11:29", "Luke 3:3", "Numbers 12:7", "Mark 4:40", "Mark 11:22", "Luke 17:5", "Luke 17:19"] },
+        { "position": "5/4", "title": { "en": "Repentance/Salvation", "es": "Arrepentimiento/Salvación" }, "references": ["2 Corinthians 7:10", "Matthew 3:8", "Genesis 49:18", "Romans 11:29", "Psalm 62:6", "Luke 5:32", "Psalm 85:7", "Genesis 6:6", "Psalm 91:16"] },
+        { "position": "5/5", "title": { "en": "Repentance", "es": "Arrepentimiento" }, "references": ["Matthew 3:8", "Luke 5:32", "Acts 13:24", "Romans 11:29", "Mark 1:4"] },
+        { "position": "5/6", "title": { "en": "Repentance/God", "es": "Arrepentimiento/Dios" }, "references": ["2 Samuel 22:47", "Psalm 18:46", "Psalm 24:5", "Luke 3:6", "Ephesians 6:17"] }
       ]
     },
     {
       "id": "god",
-      "name": "God",
+      "name": { "en": "God", "es": "Dios" },
       "icon": "✨",
       "studies": [
-        {
-          "position": "6/0",
-          "title": "God/Sin",
-          "references": [
-            "Luke 5:20",
-            "Luke 7:48",
-            "Job 1:22",
-            "Revelation 13:8",
-            "Psalm 1:1"
-          ]
-        },
-        {
-          "position": "6/1",
-          "title": "God/Love",
-          "references": [
-            "John 3:16",
-            "Joshua 23:11",
-            "Daniel 1:9",
-            "Matthew 22:37",
-            "John 5:42"
-          ]
-        },
-        {
-          "position": "6/2",
-          "title": "God/Grace",
-          "references": [
-            "Luke 2:40",
-            "Galatians 6:18",
-            "Psalm 45:2",
-            "Romans 6:15",
-            "Genesis 6:8"
-          ]
-        },
-        {
-          "position": "6/3",
-          "title": "God/Faith",
-          "references": [
-            "Matthew 8:26",
-            "Matthew 6:30",
-            "Mark 11:22",
-            "Romans 3:3",
-            "Romans 3:31"
-          ]
-        },
-        {
-          "position": "6/4",
-          "title": "God/Salvation",
-          "references": [
-            "2 Samuel 22:47",
-            "Psalm 25:5",
-            "Genesis 49:18",
-            "1 Samuel 11:13",
-            "1 Chronicles 16:23"
-          ]
-        },
-        {
-          "position": "6/5",
-          "title": "God/Repentance",
-          "references": [
-            "Romans 2:4",
-            "Hebrews 6:1",
-            "Acts 20:21",
-            "Luke 5:32",
-            "2 Timothy 2:25"
-          ]
-        },
-        {
-          "position": "6/6",
-          "title": "God",
-          "references": [
-            "Psalm 90:1",
-            "Matthew 28:19",
-            "Genesis 1:1",
-            "Genesis 1:15",
-            "Genesis 1:27"
-          ]
-        }
+        { "position": "6/0", "title": { "en": "God/Sin", "es": "Dios/Pecado" }, "references": ["Luke 5:20", "Luke 7:48", "Job 1:22", "Revelation 13:8", "Psalm 1:1"] },
+        { "position": "6/1", "title": { "en": "God/Love", "es": "Dios/Amor" }, "references": ["John 3:16", "Joshua 23:11", "Daniel 1:9", "Matthew 22:37", "John 5:42"] },
+        { "position": "6/2", "title": { "en": "God/Grace", "es": "Dios/Gracia" }, "references": ["Luke 2:40", "Galatians 6:18", "Psalm 45:2", "Romans 6:15", "Genesis 6:8"] },
+        { "position": "6/3", "title": { "en": "God/Faith", "es": "Dios/Fe" }, "references": ["Matthew 8:26", "Matthew 6:30", "Mark 11:22", "Romans 3:3", "Romans 3:31"] },
+        { "position": "6/4", "title": { "en": "God/Salvation", "es": "Dios/Salvación" }, "references": ["2 Samuel 22:47", "Psalm 25:5", "Genesis 49:18", "1 Samuel 11:13", "1 Chronicles 16:23"] },
+        { "position": "6/5", "title": { "en": "God/Repentance", "es": "Dios/Arrepentimiento" }, "references": ["Romans 2:4", "Hebrews 6:1", "Acts 20:21", "Luke 5:32", "2 Timothy 2:25"] },
+        { "position": "6/6", "title": { "en": "God", "es": "Dios" }, "references": ["Psalm 90:1", "Matthew 28:19", "Genesis 1:1", "Genesis 1:15", "Genesis 1:27"] }
       ]
     }
   ]

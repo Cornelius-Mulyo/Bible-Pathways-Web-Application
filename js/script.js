@@ -1,3 +1,87 @@
+let language = "en";
+
+const uiText = {
+
+    en: {
+
+        heroTitle: "📖 Bible Pathways",
+        heroSubtitle: "Discover God's Word One Topic at a Time",
+        heroDescription:
+            "Explore God's Word through carefully organized topical studies, making it easy to find Scripture for teaching, devotion, and personal growth.",
+
+        search: "🔍 Search topics, studies, or Bible references...",
+
+        browse: "Browse Topics",
+
+        studies: "Studies",
+
+        back: "← Back",
+
+        backStudies: "← Studies",
+
+        topicalStudies: "Topical Studies",
+
+        studyTopics: "Study Topics",
+
+        bibleVersion: "Bible Version",
+
+        references: "Scripture References",
+
+        version: "KJV"
+
+    },
+
+    es: {
+
+        heroTitle: "📖 Rutas Bíblicas",
+        heroSubtitle: "Descubre la Palabra de Dios, un tema a la vez",
+        heroDescription:
+            "Explora la Palabra de Dios mediante estudios bíblicos organizados por temas para facilitar el estudio, la enseñanza y el crecimiento espiritual.",
+
+        search: "🔍 Buscar temas, estudios o referencias bíblicas...",
+
+        browse: "Buscar temas",
+
+        studies: "Estudios",
+
+        back: "← Volver",
+
+        backStudies: "← Estudios",
+
+        topicalStudies: "Estudios Temáticos",
+
+        studyTopics: "Temas",
+
+        bibleVersion: "Versión",
+
+        references: "Referencias Bíblicas",
+
+        version: "Reina-Valera 1909"
+
+    }
+
+};
+
+let spanishBible = {};
+fetch("data/spanish_bible.json")
+    .then(r => r.json())
+    .then(data => {
+        spanishBible = data;
+        console.log("Spanish Bible loaded.");
+    });
+
+const languageSelector = document.getElementById("language");
+
+languageSelector.addEventListener("change", function () {
+
+    language = this.value;
+
+    updateLanguageUI();
+
+    loadCategories(searchBox.value);
+
+});
+
 console.log("===== NEW SCRIPT LOADED =====");
 
 const categoryContainer = document.getElementById("categoryContainer");
@@ -34,6 +118,8 @@ fetch("data/studies.json")
 
         loadCategories();
 
+        updateLanguageUI();
+
     })
     .catch(error => {
 
@@ -54,47 +140,29 @@ function loadCategories(search = "") {
     const filtered = bibleData.filter(category => {
 
         const categoryMatch =
-            category.name.toLowerCase().includes(text);
+            category.name[language].toLowerCase().includes(text);
 
         const studyMatch =
             category.studies.some(study => {
 
                 const titleMatch =
-                    study.title.toLowerCase().includes(text);
+                    study.title[language].toLowerCase().includes(text);
 
                 const referenceMatch =
                     study.references.some(ref =>
                         ref.toLowerCase().includes(text)
                     );
 
-                if (titleMatch || referenceMatch) {
-
-                    console.log(
-                        category.name,
-                        "matched by:",
-                        study.title
-                    );
-
-                }
-
                 return titleMatch || referenceMatch;
 
             });
-
-        console.log(
-            category.name,
-            "| Category:",
-            categoryMatch,
-            "| Study:",
-            studyMatch
-        );
 
         return categoryMatch || studyMatch;
 
     });
 
     console.log("Matches:", filtered.length);
-    console.log(filtered.map(c => c.name));
+    console.log(filtered.map(c => c.name[language]));
 
     filtered.forEach(category => {
 
@@ -107,11 +175,11 @@ function loadCategories(search = "") {
                 </div>
 
                 <div class="category-name">
-                    ${category.name}
+                    ${category.name[language]}
                 </div>
 
                 <div class="category-count">
-                    ${category.studies.length} Studies
+                    ${category.studies.length} ${language === "en" ? "Studies" : "Estudios"}
                 </div>
 
             </div>
@@ -143,7 +211,7 @@ function openCategory(id) {
 
     if (!category) return;
 
-    categoryTitle.textContent = category.name;
+    categoryTitle.textContent = category.name[language];
 
     studyContainer.innerHTML = "";
 
@@ -161,7 +229,7 @@ function openCategory(id) {
                 </div>
 
                 <div class="study-title">
-                    ${study.title}
+                    ${study.title[language]}
                 </div>
 
             </div>
@@ -185,7 +253,7 @@ async function openStudy(categoryId, position) {
 
     if (!study) return;
 
-    studyTitle.textContent = study.title;
+    studyTitle.textContent = study.title[language];
 
     verseSection.classList.remove("hidden");
 
@@ -197,34 +265,56 @@ async function openStudy(categoryId, position) {
 
         try {
 
-            const url =
-                `https://bible-api.com/${encodeURIComponent(reference)}?translation=kjv`;
+            if (language === "es") {
 
-            console.log("Loading:", url);
+                const verseText = spanishBible[reference];
 
-            const response = await fetch(url);
+                verseContainer.innerHTML += `
+                    <div class="verse-card">
 
-            const verse = await response.json();
+                        <div class="reference">
+                            ${reference}
+                        </div>
 
-            if (!response.ok || verse.error) {
+                        <div class="verse">
+                            ${verseText || "Verse not found"}
+                        </div>
 
-                throw new Error(verse.error || "Verse not found");
+                    </div>
+                `;
+
+            } else {
+
+                const url =
+                    `https://bible-api.com/${encodeURIComponent(reference)}?translation=kjv`;
+
+                console.log("Loading:", url);
+
+                const response = await fetch(url);
+
+                const verse = await response.json();
+
+                if (!response.ok || verse.error) {
+
+                    throw new Error(verse.error || "Verse not found");
+
+                }
+
+                verseContainer.innerHTML += `
+                    <div class="verse-card">
+
+                        <div class="reference">
+                            ${verse.reference}
+                        </div>
+
+                        <div class="verse">
+                            ${verse.text}
+                        </div>
+
+                    </div>
+                `;
 
             }
-
-            verseContainer.innerHTML += `
-                <div class="verse-card">
-
-                    <div class="reference">
-                        ${verse.reference}
-                    </div>
-
-                    <div class="verse">
-                        ${verse.text}
-                    </div>
-
-                </div>
-            `;
 
         }
 
@@ -252,6 +342,47 @@ async function openStudy(categoryId, position) {
 
 }
 
+function updateLanguageUI() {
+
+    const t = uiText[language];
+
+    document.getElementById("heroTitle").textContent =
+        t.heroTitle;
+
+    document.getElementById("heroSubtitle").textContent =
+        t.heroSubtitle;
+
+    document.getElementById("heroDescription").textContent =
+        t.heroDescription;
+
+    document.getElementById("searchBox").placeholder =
+        t.search;
+
+    document.getElementById("browseTitle").textContent =
+        t.browse;
+
+    document.getElementById("statStudies").textContent =
+        t.topicalStudies;
+
+    document.getElementById("statTopics").textContent =
+        t.studyTopics;
+
+    document.getElementById("statVersion").textContent =
+        t.bibleVersion;
+
+    document.getElementById("statReferences").textContent =
+        t.references;
+
+    document.getElementById("versionName").textContent =
+        t.version;
+
+    backButton.textContent =
+        t.back;
+
+    backToStudies.textContent =
+        t.backStudies;
+
+}
 // ========================================
 // BACK BUTTONS
 // ========================================
